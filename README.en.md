@@ -1,8 +1,19 @@
 # bili-cdn-pin
 
-**An automated fix for Bilibili lag overseas: measure the fastest CDN node and pin it, so videos stop buffering.**
+**An automated fix for Bilibili lag overseas: measure the fastest CDN node and pin it.**
 
 English (AU) | [中文](README.md)
+
+## ⭐ Strongly recommended: BTR (Bilibili Thread Ripper)
+
+If you're still buffering with this project, switch to this much better one:
+
+**[Bilibili-thread-ripper (BTR)](https://github.com/MrTangLuyao/Bilibili-thread-ripper)** — a free open-source userscript (MIT, 1.6k+ stars). It splits the video into chunks and downloads them **multi-threaded, straight from mainland CDN nodes**, sidestepping the "empty overseas edge cache" problem entirely — cold/unpopular videos and 4K/8K/Dolby Vision all play smoothly. A built-in smart scheduler keeps probing the CDNs and dynamically assigns nodes and threads, with resumable downloads.
+
+- 📺 Video intro (Chinese): [One free open-source plugin fixes overseas Bilibili lag](https://www.bilibili.com/video/BV1Teec6BE3s/)
+- 🖥️ Windows official-client version: [Bilibili-thread-ripper-desktop](https://github.com/MrTangLuyao/Bilibili-thread-ripper-desktop) — one-line install, one-click restore
+
+This repo lives on as a **diagnosis reference** for CDN-related lag types (to work out which kind of lag you have, see the [Diagnosis Guide](docs/diagnosis.md), in Chinese).
 
 ## What problem does it solve
 

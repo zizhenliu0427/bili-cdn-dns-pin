@@ -1,8 +1,21 @@
 # bili-cdn-pin
 
-**海外看B站卡顿的自动化解决方案：测出最快CDN节点并钉住它，从此视频不再卡顿。**
+**海外看B站卡顿的自动化解决方案：测出最快CDN节点并钉住它。**
 
-中文 | [English](README.en.md)
+中文 | [English](README.md)
+
+## ⭐ 强烈推荐：BTR（Bilibili 线程撕裂者）
+
+实测表明，冷门/老视频卡顿的真正原因是海外边缘节点没缓存、每个分片都要回源大陆拉取，这在 DNS / hosts 层面无解，钉哪个 IP 都一样。
+
+如果你用了本项目还是卡，请直接换这个更聪明的方案：
+
+**[Bilibili-thread-ripper（BTR）](https://github.com/MrTangLuyao/Bilibili-thread-ripper)** —— 免费开源油猴脚本（MIT，1.6k+ star）。它把视频切成小块，多线程**直连大陆 CDN 并发下载**，绕开「海外边缘没缓存」这个死结，冷门视频和 4K/8K/杜比视界都能流畅播放；内置智能调度器，持续测速各 CDN 并动态分配节点和线程，支持断点续传。
+
+- 📺 视频介绍：[仅需一个免费开源插件解决海外B站卡顿](https://www.bilibili.com/video/BV1Teec6BE3s/)
+- 🖥️ Windows 官方客户端版：[Bilibili-thread-ripper-desktop](https://github.com/MrTangLuyao/Bilibili-thread-ripper-desktop)，一行命令安装、可一键还原
+
+本项目保留作为 CDN 卡顿类型的**诊断参考**（想弄清自己属于哪种卡顿，见[诊断指南](docs/diagnosis.md)）。
 
 
 ## 它解决什么问题
